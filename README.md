@@ -1,4 +1,4 @@
-# PrimeiroGraficoChart.JS 
+# Primeiro Grafico com Chart.JS 
 
 Atividade para cria uma página HTML utilizando a biblioteca "Chart.JS" como foi explicado, criando uma dashboard como a imagem abaixo:
 
