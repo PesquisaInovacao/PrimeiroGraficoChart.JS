@@ -1,0 +1,17 @@
+.container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    height: 40vh;
+    padding: 30px;
+}
+
+.container canvas {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fafafa;
+    border: solid 10px seashell;
+    box-shadow: 3px 3px 3px 3px #888;
+}

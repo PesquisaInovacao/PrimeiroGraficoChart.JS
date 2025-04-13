@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- incluir Chart.js de um CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="canvas_linha"></canvas> <!--Tela em branco-->
+        <canvas id="canvas_bar"></canvas> <!--Tela em branco-->
+    </div>
+</body>
+
+</html>
+
+<script> //Script Grafico de linha
+    //constante que salva valores em texto das labels da parte baixa do grafico em array - essa do meu grafico de linha
+    const labels_grafic_lines = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+    // cnstante que configura exibição do grafico com json e array
+    const data_grafic_lines = {
+        labels: labels_grafic_lines,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255,0,0)', //cor do ponto
+            borderColor: 'rgb(255,0,0)', //cor da linha
+            data: [30, 29, 28, 25, 22, 23] //valores mocados de temperatura
+        }, {
+            label: 'Umidade',
+            backgroundColor: 'rgb(0,0,255)', //cor do ponto
+            borderColor: 'rgb(0,0,255)', //cor da linha
+            data: [80, 82, 80, 85, 80, 83] //valores mocados de temperatura
+        }
+
+        ]
+    };
+    // configurações do grafico. titulos, base de inicio e final e etc.
+    const config_grafic_lines = {
+        type: 'line',
+        data: data_grafic_lines,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+
+    // inicia um novo grafico dando como referencia o id do canvas e as configurações
+    const chart_grafic_lines = new Chart(
+        document.getElementById('canvas_linha'),
+        config_grafic_lines
+    );
+</script>
+
+<script> // Script Grafico de barra
+    const labels_grafic_bar = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho'
+    ]
+
+    const data_grafic_bar = {
+        labels: labels_grafic_bar,
+        datasets: [{
+            label: 'Temperatura Média',
+            backgroundColor: 'rgb(255,0,0)',
+            data: [22, 24, 27, 23, 20, 18]
+        }, {
+            label: 'Umidade Média',
+            backgroundColor: 'rgb(0,0,255)',
+            data: [90, 89, 93, 87, 88, 82]
+        }]
+    };
+
+    const config_grafic_bar = {
+        type: 'bar',
+        data: data_grafic_bar,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    };
+
+    const chart_grafic_bar = new Chart (
+        document.getElementById('canvas_bar'),
+        config_grafic_bar
+    )
+</script>
