@@ -30,3 +30,7 @@ Para facilitar, estes são os dados:
 |   Junho       |	    18              |	82         |
 
 Caso queira, pode adicionar CSS à página!
+
+# Resultado
+
+![alt](img/Captura%20de%20tela%202025-04-13%20153221.png)
