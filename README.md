@@ -1,4 +1,4 @@
-# PrimeiroGraficoChart.JS
+# PrimeiroGraficoChart.JS 
 
 Atividade para cria uma página HTML utilizando a biblioteca "Chart.JS" como foi explicado, criando uma dashboard como a imagem abaixo:
 
@@ -6,7 +6,7 @@ Atividade para cria uma página HTML utilizando a biblioteca "Chart.JS" como foi
 
 Para facilitar, estes são os dados:
 
-## Gráfico de Linhas:
+## 📈 Gráfico de Linhas: 
 
 |   Horário |   Temperatura |   Umidade |
 |-----------|---------------|-----------|
@@ -18,7 +18,7 @@ Para facilitar, estes são os dados:
 |   17:00	|       23	    |   83      |
 |           |               |           |
 
-## Gráfico de Barras:
+## 📊 Gráfico de Barras:
 
 |       Mês     |   Temperatura Médiau  | Umidade Média|   
 |---------------|-----------------------|--------------|                                       
